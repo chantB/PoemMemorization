@@ -1,0 +1,23 @@
+{
+  "name": "PoemMemorization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Poem1Sentence.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chantB/FoodDelivery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chantB/FoodDelivery/issues"
+  },
+  "homepage": "https://github.com/chantB/FoodDelivery#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

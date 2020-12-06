@@ -1,0 +1,167 @@
+.title1{
+    margin-top: 20px;
+    font-size: 70px;
+    color: #6A0DAD;
+    text-align: center;
+    font-weight: bold;
+
+}
+.header{
+    position: absolute;
+    width: 98.5%;
+    background-image: url("poem2.jpg");
+    background-size: cover; 
+    height: 120px;
+}
+.card {
+    background-color: white;
+    margin-top:50px;
+    margin-left: 80px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border-radius: 5%;
+  }
+  .container {
+    padding: 2px 16px;
+  }
+  .cards{
+    display: flex;
+    background-image: url("poembackground.jpg");
+    height: 500px;
+    background-size: cover; 
+    margin-top: 50px;
+  }
+  .button {
+    background-color: #6A0DAD; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button1 {
+    background-color: #6A0DAD; 
+    color: white; 
+    border: 2px solid  #6A0DAD;
+  }
+  
+  .button1:hover {
+    background-color: white;
+    color: black;
+  }
+ .subTitle{
+     margin-top: 65px;
+     font-size: 30px;
+     color: #6A0DAD;
+     margin-left: 80px;
+ }
+ b{
+    color: #6A0DAD;
+    font-size: 25px;
+ }
+ footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(75, 71, 70);
+  color: white;
+}
+.bigCard{
+    background-color: white;
+    margin-top:50px;
+    margin-left: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    border-radius: 5%;
+}
+.bgTitle{
+  margin-top:50px;
+  font-size: 40px;
+  color: #6A0DAD;
+  text-align: center;
+  font-weight: bold;
+}
+.bgPoem{
+  margin-top:50px;
+  font-size: 20px;
+  color: #6A0DAD;
+  text-align: center;
+}
+.bgAuthor{
+margin-top:40px;
+margin-left:330px;
+font-size: 20px;
+color: #6A0DAD;
+}
+.buttonDiv{
+  font-size: 30px;
+  color: #6A0DAD;
+  margin-left: 100px;
+}
+.buttonDiv2{
+  color: #6A0DAD;
+  margin-left: 100px;
+}
+.bigCard2{
+  position: absolute;
+  background-color: white;
+  margin-top:150px;
+  margin-left: 22%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 700px;
+  height: 200px;
+  text-align: center;
+  border-color:  #6A0DAD;
+  border-style: solid;
+}
+.bgSentence{
+  margin-top:70px;
+  font-size: 40px;
+  color: #6A0DAD;
+  text-align: center;
+  font-weight: bold;
+}
+.buttonDiv3{
+  color: #6A0DAD;
+  margin-left: 100px;
+}
+.cardLine {
+  background-color: white;
+  margin-left: 570px;
+  margin-top: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 5%;
+  color: #6A0DAD;
+  font-size: 20px;
+}
+.buttonDiv4{
+  color: #6A0DAD;
+  margin-left: 100px;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+  margin-top: 65px;
+  margin-left: 70px;
+}
+.buttonDiv5{
+  color: #6A0DAD;
+  margin-top: 400px;
+  margin-left: -100px;
+  visibility: hidden;
+}
+
+  
+  

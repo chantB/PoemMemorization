@@ -1,0 +1,106 @@
+<html>
+<link rel="stylesheet" type="text/css" href="Home.css" />
+<div class="header">
+    <div class="title1">Poem Memorization</div>
+
+    <body>
+
+        <div class="buttons">
+            <div class="buttonDiv"><a class="button button1" href="Home.html">Home</a></div>
+            <div class="buttonDiv2"><button class="button button1" onclick="previousLine()">Previous Line</button></div>
+            <div class="buttonDiv3"><button class="button button1" onclick="newLine()">Next Line</button></div>
+            <div class="buttonDiv4"><button class="button button1" onclick="MemorizeLine()">Practice Line</button></div>
+
+        </div>
+        <div class="cards">
+            <div class="cardLine" id="test2"></div>
+            <div class="buttonDiv5" id="test3"><button class="button button1" onclick="MemorizeLine()">show next
+                    word</button>
+            </div>
+            <script>
+                var count = -1;
+                function MemorizeLine() {
+                    document.getElementById('test3').style.visibility = 'visible';
+                    if (count == -1) {
+                        test.innerHTML = "<p class='bgSentence'>" + "</p>";
+                    }
+                    if (count == 0) {
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][1] + "</p>";
+                    }
+                    else if (count == 1) {
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][1] + lines[pos][2] + "</p>";
+                    }
+                    else if (count == 2) {
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][1] + lines[pos][2] + lines[pos][3] + "</p>";
+                    }
+                    else if (count == 3) {
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][1] + lines[pos][2] + lines[pos][3] + lines[pos][4] + "</p>";
+                    }
+                    else if (count == 4) {
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][1] + lines[pos][2] + lines[pos][3] + lines[pos][4] + lines[pos][5] + "</p>";
+                    }
+                    else if (count == 5) {
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][1] + lines[pos][2] + lines[pos][3] + lines[pos][4] + lines[pos][5] + lines[pos][6] + "</p>";
+                    }
+                    else if (count == 6) {
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][1] + lines[pos][2] + lines[pos][3] + lines[pos][4] + lines[pos][5] + lines[pos][6] + lines[pos][7] + "</p>";
+                    }
+                    else if (count == 7) {
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][1] + lines[pos][2] + lines[pos][3] + lines[pos][4] + lines[pos][5] + lines[pos][6] + lines[pos][7] + lines[pos][8] + "</p>";
+                    }
+                    else if (count == 8) {
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][1] + lines[pos][2] + lines[pos][3] + lines[pos][4] + lines[pos][5] + lines[pos][6] + lines[pos][7] + lines[pos][8] + lines[pos][9] + "</p>";
+                    }
+                    count++;
+                }
+            </script>
+            <div class="bigCard2" id="test">
+                <script>
+                    var pos = 0, test, test2, tPos;
+                    var lines = [
+                        ["Between what is said and not meant", "Between ", "what ", "is ", "said ", "and ", "not ", "meant ", "", ""],
+                        ["and what is meant and not said", "and ", "what ", "is ", "meant ", "and ", "not ", "said ", "", ""],
+                        ["most of love is lost.", "most ", "of ", "love ", "is ", "lost.", "", "", "", ""]
+
+                    ];
+                    function _(x) {
+                        return document.getElementById(x);
+                    }
+                    function renderQuestion() {
+                        tPos = pos + 1;
+                        test = _("test");
+                        test2 = _("test2");
+                        test2.innerHTML = "<p>" + tPos + "/3" + "</p>";
+                        test.innerHTML = "<p class='bgSentence'>" + lines[pos][0] + "</p>";
+
+                    }
+                    function newLine() {
+                        count = -1;
+                        document.getElementById('test3').style.visibility = 'hidden';
+                        if (pos < 2) {
+                            pos++;
+                            renderQuestion();
+                        }
+                    }
+                    function previousLine() {
+                        count = -1;
+                        document.getElementById('test3').style.visibility = 'hidden';
+                        if (pos > 0) {
+                            pos--;
+                            renderQuestion();
+                        }
+                    }
+                    window.addEventListener("load", renderQuestion, false);
+                </script>
+            </div>
+        </div>
+
+
+    </body>
+
+    <footer>
+        <p>Poem Memorization<br>
+            <a href="#">PoemMemorization@gmail.com</a></p>
+    </footer>
+
+</html>
